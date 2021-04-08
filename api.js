@@ -14,7 +14,9 @@ const cheerio = require('cheerio')
 // const request = require('request')
 const axios = require('axios')
 
-app.get('/', (req, res) => res.send('<h1 style="text-align: center; font-size: 3rem;">Hello World!</h1>'))
+app.get('/', (req, res) => {
+    res.send('<h1 style="text-align: center; font-size: 3rem;">Hello World!</h1>')
+})
 
 app.get('/api/pic', (req, res) => {
     axios.get()
